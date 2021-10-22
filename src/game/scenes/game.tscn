@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/game/scripts/hello.gd" type="Script" id=1]
+[ext_resource path="res://src/game/scripts/hello.cs" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 445.0
+margin_top = 123.0
+margin_right = 594.0
+margin_bottom = 137.0
+text = "CLICK TO CHANGE TEXT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GDSCRIPT" type="Button" parent="."]
+margin_left = 377.0
+margin_top = 223.0
+margin_right = 452.0
+margin_bottom = 243.0
+text = "GDSCRIPT"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+_label = NodePath("../Label")
+
+[node name="CSHARP" type="Button" parent="."]
+margin_left = 632.0
+margin_top = 221.0
+margin_right = 694.0
+margin_bottom = 241.0
+text = "CSHARP"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+_label = NodePath("../Label")
